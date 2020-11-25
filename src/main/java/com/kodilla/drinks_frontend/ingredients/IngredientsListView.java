@@ -10,7 +10,7 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
 @Route(value = "ingredients", layout = MainLayout.class)
-@PageTitle("Ingredients List")
+@PageTitle("Ingredients")
 public class IngredientsListView extends VerticalLayout {
 
     private IngredientsService ingredientsService = IngredientsService.getInstance();

@@ -7,7 +7,7 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
 @Route(value = "contactUs", layout = MainLayout.class)
-@PageTitle("Contact Us")
+@PageTitle("Contact-Us")
 public class ContactUsView extends VerticalLayout {
 
     private ContactUsForm contactUsForm = new ContactUsForm();

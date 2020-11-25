@@ -37,4 +37,24 @@ public class Votes {
     public void setVotesCount(Integer votesCount) {
         this.votesCount = votesCount;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Votes votes = (Votes) o;
+
+        if (id != null ? !id.equals(votes.id) : votes.id != null) return false;
+        if (ingredient != null ? !ingredient.equals(votes.ingredient) : votes.ingredient != null) return false;
+        return votesCount != null ? votesCount.equals(votes.votesCount) : votes.votesCount == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (ingredient != null ? ingredient.hashCode() : 0);
+        result = 31 * result + (votesCount != null ? votesCount.hashCode() : 0);
+        return result;
+    }
 }

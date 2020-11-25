@@ -37,6 +37,7 @@ public class IngredientsService {
         return ingredients;
     }
 
+    //Backend - not working
     public Set backend() {
         List<Ingredients> backend = ingredientsConnections.getAllIngredientsList();
         Set ingredients = new HashSet(backend);

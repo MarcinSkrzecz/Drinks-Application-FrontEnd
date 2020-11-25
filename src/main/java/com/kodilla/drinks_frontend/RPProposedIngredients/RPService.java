@@ -36,7 +36,7 @@ public class RPService {
         ingredients.add(new RPIngredients("Beer"));
         return ingredients;
     }
-
+    //Backend - not working
     public Set backend() {
         List<RPIngredients> backendIngredients = rpProposedIngredientsConnections.getAllCRPIngredientsList();
         Set ingredients = new HashSet(backendIngredients);
